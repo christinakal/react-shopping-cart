@@ -11,5 +11,5 @@ const Navigation = props => {
 		</div>
 	);
 };
-
+ 
 export default Navigation;

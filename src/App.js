@@ -9,30 +9,30 @@ import ShoppingCart from './components/ShoppingCart';
 
 function App() {
 	const [products] = useState(data);
+	const [item, setItem] = useState([])
 	const [cart, setCart] = useState([]);
-
+ 
 	const addItem = item => {
 		// add the given item to the cart
+		setCart([...cart, item]);
+		console.log(setCart);
 	};
 
 	return (
 		<div className="App">
 			<Navigation cart={cart} />
-
+			{console.log('Cart', cart)}
 			{/* Routes */}
 			<Route
 				exact
 				path="/"
 				render={() => (
-					<Products
-						products={products}
-						addItem={addItem}
-					/>
+					<Products products={products} addItem={addItem} />
 				)}
 			/>
 
 			<Route
-				path="/cart"
+				path="/cart/"
 				render={() => <ShoppingCart cart={cart} />}
 			/>
 		</div>

@@ -10,7 +10,7 @@ const ShoppingCart = props => {
 		}, 0).toFixed(2);
 	};
 
-	return (
+	return ( 
 		<div className="shopping-cart">
 			{props.cart.map(item => (
 				<Item key={item.id} {...item} />

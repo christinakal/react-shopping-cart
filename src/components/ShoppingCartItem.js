@@ -12,7 +12,7 @@ const Item = props => {
 				<button>Remove from cart</button>
 			</div>
 		</div>
-	);
+	); 
 };
 
 export default Item;
