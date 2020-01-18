@@ -14,6 +14,6 @@ const Product = props => {
 			</button>
 		</div>
 	);
-};
+}; 
 
 export default Product;
