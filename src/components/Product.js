@@ -10,10 +10,10 @@ const Product = props => {
 			<p className="price">${props.product.price}</p>
 
 			<button onClick={() => props.addItem(props.product)}>
-				Add to cart
+				Add to cart 
 			</button>
 		</div>
 	);
-};
+}; 
 
 export default Product;
